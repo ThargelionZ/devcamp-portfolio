@@ -61,12 +61,12 @@ class BlogsController < ApplicationController
     
     if @blog.draft?
       @blog.published!
-    else if @blog.published?
+    elsif @blog.published?
       @blog.draft!
     end
     
     redirect_to blogs_url, notice: "Post status has been updated."
-  end
+    end
 
   private
     # Use callbacks to share common setup or constraints between actions.
@@ -78,5 +78,4 @@ class BlogsController < ApplicationController
     def blog_params
       params.require(:blog).permit(:title, :body)
     end
-  end
 end
