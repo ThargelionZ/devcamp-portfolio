@@ -15,4 +15,8 @@ module ApplicationHelper
       content_tag(:p, greeting, class: "source-greeting")
     end
   end
+  
+  def copyright_generator
+    MylesparkerViewTool::Renderer.copyright "Myles Parker", "All Rights Reserved"
+  end
 end
