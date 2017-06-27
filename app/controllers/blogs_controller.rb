@@ -70,7 +70,7 @@ class BlogsController < ApplicationController
     end
     
     redirect_to blogs_url, notice: "Post status has been updated."
-    end
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.

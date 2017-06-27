@@ -15,3 +15,8 @@ class User < ApplicationRecord
     self.name.split.last
   end
 end
+
+# begin
+# test code
+# rescue => e
+# puts 'Error: #{e}'
