@@ -2,7 +2,8 @@
   <%= image_tag portfolio_item.thumb_image unless portfolio_item.thumb_image.nil? %>
   <p class="card-text">
     <span><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item.id) %> <%= portfolio_item.subtitle %> <%= "/" if logged_in?(:site_admin) %> 
-    <%= link_to "Edit", edit_portfolio_path(portfolio_item.id) if logged_in?(:site_admin) %> <%= "/" if logged_in?(:site_admin) %>
+    <%= link_to "Edit", edit_portfolio_path(portfolio_item.id) if logged_in?(:site_admin) %> <%= "/" if logged_in?(:site_admin) %> 
+    <%= link_to "Destroy", portfolio_item, method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:site_admin) %>
   </p>
 </div>
 
