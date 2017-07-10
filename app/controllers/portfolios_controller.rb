@@ -60,7 +60,7 @@ class PortfoliosController < ApplicationController
     
     # Redirect
     respond_to do |format|
-      format.html { redirect_to portfolios_url, notice: 'Blog was successfully destroyed.' }
+      format.html { redirect_to portfolios_url, notice: 'Portfolio was successfully destroyed.' }
     end
   end
   
