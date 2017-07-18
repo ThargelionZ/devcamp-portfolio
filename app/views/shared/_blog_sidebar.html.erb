@@ -3,6 +3,14 @@
     <h4>About</h4>
     <p>My name is Myles Parker. I'm 18 years old and have started my first blog here. By reading my blogs you can find out what projects I'm working on, and just see what my life is like on a day to day basis.</p>
   </div>
+  
+  <div class="sidebar-module">
+    <h4>Topics</h4>
+    <% @side_bar_topics.each do |topic| %>
+      <p><%= link_to topic.title, topic_path(topic) %></p>
+    <% end %>
+  </div>
+  
   <div class="sidebar-module">
     <h4>Social Media</h4>
     <ol class="list-unstyled social-links">
