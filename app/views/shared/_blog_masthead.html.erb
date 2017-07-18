@@ -2,6 +2,11 @@
   <div class="container">
     <h1 class="blog-title">My Blog</h1>
     <p class="lead blog-description">A blog written by Myles Parker that entails adventures in his day to day life.</p>
-    <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %>
+    <p>
+      <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %>
+    </p>
+    <p>
+      <%= link_to "Topics", topics_path %>
+    </p>
   </div>
 </div>
