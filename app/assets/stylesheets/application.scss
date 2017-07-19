@@ -169,57 +169,63 @@ body {
  * Custom Styles
  */
  
- .card-block {
-   color: black;
-   text-align: left;
- }
+.card-block {
+ color: black;
+ text-align: left;
+}
+
+.auth-links a {
+ color: black;
+}
+
+.register-text {
+ text-align: right;
+}
+
+.login > .card {
+ width: 22rem;
+ margin: 0 auto;
+ float: none;
+}
+
+.app-nav span {
+ margin-left: 15px;
+ margin-right: 15px;
+}
+
+#background {
+ position: fixed;
+ top: 50%;
+ left: 50%;
+ min-width: 100%;
+ min-height: 100%;
+ width: auto;
+ height: auto;
+ z-index: -1;
+ -webkit-transform: translateX(-50%) translateY(-50%);
+ transform: translateX(-50%) translateY(-50%);
+ background-size: cover;
+}
+
+.app-footer {
+ color: white;
+}
+
+.tech-news {
+ color: black;
+ margin: 20px;
+}
+
+.tech-news a {
+ color: rgb(2, 117, 216);
+}
+
+.tech-news > .card {
+ padding: 30px;
+}
  
- .auth-links a {
-   color: black;
- }
- 
- .register-text {
-   text-align: right;
- }
- 
- .login > .card {
-   width: 22rem;
-   margin: 0 auto;
-   float: none;
- }
- 
- .app-nav span {
-   margin-left: 15px;
-   margin-right: 15px;
- }
- 
- #background {
-   position: fixed;
-   top: 50%;
-   left: 50%;
-   min-width: 100%;
-   min-height: 100%;
-   width: auto;
-   height: auto;
-   z-index: -1;
-   -webkit-transform: translateX(-50%) translateY(-50%);
-   transform: translateX(-50%) translateY(-50%);
-   background-size: cover;
- }
- 
- .app-footer {
-   color: white;
- }
- 
- .tech-news {
-   color: black;
-   margin: 20px;
- }
- 
- .tech-news a {
-   color: rgb(2, 117, 216);
- }
- 
- .tech-news > .card {
-   padding: 30px;
- }
+#about-me-img {
+  transform: rotate(270deg);
+    margin-top: 70px;
+    width: 400px;
+}
