@@ -4,6 +4,16 @@
 @import "jquery-ui";
 @import "gritter";
 
+@font-face {
+  font-family: "Asap";
+  src:font-url("Asap-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Raleway";
+  src:font-url("Raleway-Regular.ttf");
+}
+
 /*
  * Globals
  */
@@ -29,10 +39,19 @@ a:hover {
 /*
  * Base structure
  */
+ 
+ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+   font-family: 'Asap', sans-serif;
+ }
+ 
+
+
+// font-family: 'Open Sans', sans-serif;
 
 html,
 body {
   height: 100%;
+  font-family: 'Raleway', sans-serif;
   //background-color: #333;
 }
 body {
