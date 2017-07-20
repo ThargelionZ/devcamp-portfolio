@@ -1,5 +1,6 @@
 <div class="album text-muted">
   <div class="container">
+    <%= source_helper("alert alert-warning") %>
     <%= link_to "Create a New Portfolio Item", new_portfolio_path, class: "create-item" if logged_in?(:site_admin) %>
     <div class="row <%= "sortable" if logged_in?(:site_admin) %>">
 

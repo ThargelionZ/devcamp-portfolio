@@ -4,6 +4,16 @@
 @import "jquery-ui";
 @import "gritter";
 
+@font-face {
+  font-family: "Asap";
+  src:font-url("Asap-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Raleway";
+  src:font-url("Raleway-Regular.ttf");
+}
+
 /*
  * Globals
  */
@@ -29,10 +39,19 @@ a:hover {
 /*
  * Base structure
  */
+ 
+ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+   font-family: 'Asap', sans-serif;
+ }
+ 
+
+
+// font-family: 'Open Sans', sans-serif;
 
 html,
 body {
   height: 100%;
+  font-family: 'Raleway', sans-serif;
   //background-color: #333;
 }
 body {
@@ -169,57 +188,88 @@ body {
  * Custom Styles
  */
  
- .card-block {
-   color: black;
-   text-align: left;
- }
+.card-block {
+ color: black;
+ text-align: left;
+}
+
+.auth-links a {
+ color: black;
+}
+
+.register-text {
+ text-align: right;
+}
+
+.login > .card {
+ width: 22rem;
+ margin: 0 auto;
+ float: none;
+}
+
+.app-nav span {
+ margin-left: 15px;
+ margin-right: 15px;
+}
+
+#background {
+ position: fixed;
+ top: 50%;
+ left: 50%;
+ min-width: 100%;
+ min-height: 100%;
+ width: auto;
+ height: auto;
+ z-index: -1;
+ -webkit-transform: translateX(-50%) translateY(-50%);
+ transform: translateX(-50%) translateY(-50%);
+ background-size: cover;
+}
+
+.app-footer {
+ color: white;
+}
+
+.tech-news {
+ color: black;
+ margin: 20px;
+}
+
+.tech-news a {
+ color: rgb(2, 117, 216);
+}
+
+.tech-news > .card {
+ padding: 30px;
+}
  
- .auth-links a {
-   color: black;
- }
- 
- .register-text {
-   text-align: right;
- }
- 
- .login > .card {
-   width: 22rem;
-   margin: 0 auto;
-   float: none;
- }
- 
- .app-nav span {
-   margin-left: 15px;
-   margin-right: 15px;
- }
- 
- #background {
-   position: fixed;
-   top: 50%;
-   left: 50%;
-   min-width: 100%;
-   min-height: 100%;
-   width: auto;
-   height: auto;
-   z-index: -1;
-   -webkit-transform: translateX(-50%) translateY(-50%);
-   transform: translateX(-50%) translateY(-50%);
-   background-size: cover;
- }
- 
- .app-footer {
-   color: white;
- }
- 
- .tech-news {
-   color: black;
-   margin: 20px;
- }
- 
- .tech-news a {
-   color: rgb(2, 117, 216);
- }
- 
- .tech-news > .card {
-   padding: 30px;
- }
+#about-me-img {
+  width: 300px;
+}
+
+.app-card-container {
+  color: black;
+  text-align: left;
+}
+
+.app-card-container > .card {
+  padding: 40px;
+}
+
+.app-card-container h1 {
+  margin-bottom: 20px;
+}
+
+.app-card-container a {
+  color: rgb(2, 117, 216);
+}
+
+.card-block {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.skill {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
