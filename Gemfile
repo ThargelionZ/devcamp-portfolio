@@ -74,3 +74,4 @@ gem 'twitter', '~> 6.1'
 gem 'redis', '~> 3.3', '>= 3.3.1'
 gem 'redcarpet', '~> 3.4' # redcarpet is syntax markdown
 gem 'coderay', '~> 1.1', '>= 1.1.1' # fast and easy syntax highlighting
+gem 'obscenity' # Removes profanity in comments
