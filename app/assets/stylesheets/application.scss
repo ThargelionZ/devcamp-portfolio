@@ -225,7 +225,22 @@ body {
 }
  
 #about-me-img {
-  transform: rotate(270deg);
-    margin-top: 70px;
-    width: 400px;
+  width: 300px;
+}
+
+.app-card-container {
+  color: black;
+  text-align: left;
+}
+
+.app-card-container > .card {
+  padding: 40px;
+}
+
+.app-card-container h1 {
+  margin-bottom: 20px;
+}
+
+.app-card-container a {
+  color: rgb(2, 117, 216);
 }
