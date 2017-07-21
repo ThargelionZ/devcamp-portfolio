@@ -24,5 +24,6 @@ module MyApp
     # -- all .rb files in that directory are automatically loaded.
     
     config.eager_load_paths << "#{Rails.root}/lib"
+    config.serve_static_assets = true
   end
 end
