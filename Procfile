@@ -1,1 +1,1 @@
-web: rails db:setup
+web: rails db:migrate
