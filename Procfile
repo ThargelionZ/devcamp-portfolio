@@ -1,1 +1,1 @@
-web: sudo service postgresql start && rails s
+web: service postgresql start && rails s
